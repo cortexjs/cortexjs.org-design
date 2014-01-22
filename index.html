@@ -1,0 +1,77 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Cortex</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="lib/highlightjs/default.css">
+    <script src="lib/highlightjs/highlight.min.js"></script>
+    <script type="text/javascript">
+      hljs.initHighlightingOnLoad();
+    </script>
+</head>
+<body>
+
+    <div class="header">
+        <img src="img/logo.png" alt="logo" class="logo">
+        <h1 class="title">Cortex</h1>
+        <p class="describe">Cortex is an NPM-like package manager for the web, designed to change the way you write web modules.</p>
+        <ul class="funcs">
+            <li class="item"><a href="#"><img src="img/github.png" alt=""></a></li>
+            <li class="item"><a href="#"><img src="img/docs.png" alt=""></a></li>
+            <li class="item"><a href="#"><img src="img/search.png" alt=""></a></li>
+        </ul>
+        <div class="button-wrap">
+            <a href="" class="button">Getting Started</a>
+        </div>
+    </div>
+    <div class="body">
+        <ul class="selects">
+            <li class="item active"></li>
+            <li class="item"></li>
+            <li class="item last"></li>
+        </ul>
+        <div class="panel">
+            <div class="container">
+                <div class="code-block">
+                    <pre><code>var lang    = require('lang');
+var $       = require('jquery');
+
+// @const
+var TOP     = 'top';
+var LEFT    = 'left';
+var VIEWPORT    = 'viewport';
+var SCROLL      = 'scroll';
+
+var $HTML       = $(document.documentElement);
+var $WIN        = $(window);
+
+function NOOP(){}
+
+// ie 6 and former fail to deal with position:fixed
+var broken_fixed = function(){
+    var userAgent = navigator.userAgent.toLowerCases();
+}</code></pre>
+                </div>
+                <div class="features">
+                    <h2 class="title">Write Browser Code like Node.js</h2>
+                    <ul>
+                        <li>With cortex, you could write web modules exactly the way you do with node.js.</li>
+                        <li>Get browser versions of the node core libraries events, stream, path, url, assert, buffer, util, querystring, http, etc when you require() them </li>
+                    </ul>
+                </div>
+            </div>
+
+        </div>
+    </div>
+    <div class="footer">
+        <div class="links">
+            <a href="#">Github</a>
+            <a href="#">Documentations</a>
+            <a href="#">Search</a>
+            <a href="#">Report</a>
+            <a href="#">Issues</a>
+        </div>
+    </div>
+</body>
+</html>
